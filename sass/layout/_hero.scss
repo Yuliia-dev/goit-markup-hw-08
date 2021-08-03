@@ -19,9 +19,11 @@
       url('../images/hero-desktop.jpg');
   }
 }
-.hero-container {
-  width: 390px;
 
+.hero-container {
+  @media screen and (min-width: 768px) {
+    width: 390px;
+  }
   @media screen and (min-width: 1200px) {
     width: 700px;
   }
