@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container nav">
         <nav class="nav">
           <a class="logo link" lang="en" href="./index.html"
@@ -57,7 +57,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Hero -->
 
@@ -72,7 +72,7 @@
 
       <!-- Specifics  -->
 
-      <section class="specifics section">
+      <!-- <section class="specifics section">
         <div class="container">
           <h2 class="preference hidden">Наши преимущества</h2>
           <ul class="preference__list list">
@@ -126,58 +126,75 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Work -->
 
-      <section class="work section">
+      <!-- <section class="work section">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__item list">
             <li class="work__item-img">
+              <picture>
+                <source media="min-width: 1200px" srcset="./images/box1desktop.webp 1x, ./images/box1desktop@2x.webp 2x" type="image/webp">
+                <source media="min-width: 1200px" srcset="./images/box1desktop.jpg 1x, ./images/box1desktop@2x.jpg 2x">
               <img
-                src="./images/box1.jpg"
+                src="./images/box1desktop.jpg"
                 alt="Компьютер"
-                width="370"
-                height="294"
               />
+            </picture>
               <p class="work__overlay">Десктопные приложения</p>
             </li>
             <li class="work__item-img">
+              <picture>
+              <source media="min-width: 1200px" srcset="./images/box2desktop.webp 1x, ./images/box2desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="min-width: 1200px" srcset="./images/box2desktop.jpg 1x, ./images/box2desktop@2x.jpg 2x">
               <img
-                src="./images/box2.jpg"
+                src="./images/box2desktop.jpg"
                 alt="Ноутбук и телефон"
-                width="370"
-                height="294"
               />
+            </picture>
               <p class="work__overlay">Мобильные приложения</p>
             </li>
             <li class="work__item-img">
+              <picture>
+                <source media="min-width: 1200px" srcset="./images/box3desktop.webp 1x, ./images/box3desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 1200px" srcset="./images/box3desktop.jpg 1x, ./images/box3desktop@2x.jpg 2x">
               <img
-                src="./images/box3.jpg"
+                src="./images/box3desktop.jpg"
                 alt="Планшет"
-                width="370"
-                height="294"
               />
+            </picture>
               <p class="work__overlay">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__item list">
             <li class="team__list">
+              <picture>
+                <source media="min-width: 1200px" srcset="./images/igor-desktop.webp 1x, ./images/igor-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 1200px" srcset="./images/igor-desktop.jpg 1x, ./images/igor-desktop@2x.jpg 2x">
+                <source media="min-width: 768px" srcset="./images/igor-tablet.webp 1x, ./images/igor-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 768px" srcset="./images/igor-tablet.jpg 1x, ./images/igor-tablet@2x.jpg 2x">
+                <source media="min-width: 480px" srcset="./images/igor-mobile.webp 1x, ./images/igor-mobile@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 480px" srcset="./images/igor-mobile.jpg 1x, ./images/igor-mobile@2x.jpg 2x">
               <img
-                src="./images/igor.jpg"
+                src="./images/igor-desktop.jpg"
                 alt="Фото мужчины"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="person">
                 <h3 class="person__name">Игорь Демьяненко</h3>
                 <p class="person__position" lang="en">Product Designer</p>
@@ -215,13 +232,22 @@
               </div>
             </li>
             <li class="team__list">
+              <picture>
+              <source media="min-width: 1200px" srcset="./images/olga-desktop.webp 1x, ./images/olga-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="min-width: 1200px" srcset="./images/olga-desktop.jpg 1x, ./images/olga-desktop@2x.jpg 2x">
+              <source media="min-width: 768px" srcset="./images/olga-tablet.webp 1x, ./images/olga-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="min-width: 768px" srcset="./images/olga-tablet.jpg 1x, ./images/olga-tablet@2x.jpg 2x">
+              <source media="min-width: 480px" srcset="./images/olga-mobile.webp 1x, ./images/olga-mobile@2x.webp 2x"
+                type="image/webp">
+              <source media="min-width: 480px" srcset="./images/olga-mobile.jpg 1x, ./images/olga-mobile@2x.jpg 2x">
               <img
                 class="photo"
-                src="./images/olga.jpg"
+                src="./images/olga-desktop.jpg"
                 alt="Фото женщины"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="person">
                 <h3 class="person__name">Ольга Репина</h3>
                 <p class="person__position" lang="en">Frontend Developer</p>
@@ -259,13 +285,22 @@
               </div>
             </li>
             <li class="team__list">
+              <picture>
+                <source media="min-width: 1200px" srcset="./images/nikolay-desktop.webp 1x, ./images/nikolay-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 1200px" srcset="./images/nikolay-desktop.jpg 1x, ./images/nikolay-desktop@2x.jpg 2x">
+                <source media="min-width: 768px" srcset="./images/nikolay-tablet.webp 1x, ./images/nikolay-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 768px" srcset="./images/nikolay-tablet.jpg 1x, ./images/nikolay-tablet@2x.jpg 2x">
+                <source media="min-width: 480px" srcset="./images/nikolay-mobile.webp 1x, ./images/nikolay-mobile@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 480px" srcset="./images/nikolay-mobile.jpg 1x, ./images/nikolay-mobile@2x.jpg 2x">
               <img
                 class="photo"
-                src="./images/nikolay.jpg"
+                src="./images/nikolay-desktop.jpg"
                 alt="Фото мужчины"
-                width="270"
-                height="260"
               />
+            </picture>
               <div class="person">
                 <h3 class="person__name">Николай Тарасов</h3>
                 <p class="person__position" lang="en">Marketing</p>
@@ -303,12 +338,19 @@
               </div>
             </li>
             <li class="team__list">
+              <picture>
+                <source media="min-width: 1200px" srcset="./images/mihail-desktop.jpg 1x, ./images/mihail-desktop@2x.jpg 2x">
+                <source media="min-width: 768px" srcset="./images/mihail-tablet.webp 1x, ./images/mihail-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 768px" srcset="./images/mihail-tablet.jpg 1x, ./images/mihail-tablet@2x.jpg 2x">
+                <source media="min-width: 480px" srcset="./images/mihail-mobile.webp 1x, ./images/mihail-mobile@2x.webp 2x"
+                  type="image/webp">
+                <source media="min-width: 480px" srcset="./images/mihail-mobile.jpg 1x, ./images/mihail-mobile@2x.jpg 2x">
               <img
-                src="./images/mihail.jpg"
+                src="./images/mihail-desktop.jpg"
                 alt="Фото мужчины"
-                width="270"
-                height="260"
               />
+              </picture>
               <div class="person">
                 <h3 class="person__name">Михаил Ермаков</h3>
                 <p class="person__position" lang="en">UI Designer</p>
@@ -347,11 +389,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Company-client -->
 
-      <section class="company section">
+      <!-- <section class="company section">
         <div class="container">
           <h2 class="company__title">Постоянные клиенты</h2>
           <ul class="company__list list">
@@ -399,12 +441,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container general">
         <div class="footer-container">
           <a class="logo footer-logo link" lang="en" href="./index.html"
@@ -462,11 +504,11 @@
               ></a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <!-- /* Subscription form */ -->
 
-        <div class="subscription">
+        <!-- <div class="subscription">
           <b class="subscription-footer">Подпишитесь на рассылку</b>
           <form>
             <div class="container-subscription">
@@ -487,10 +529,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Backdrop -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg width="11" height="11">
@@ -568,8 +610,8 @@
           <button class="modal-form-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
