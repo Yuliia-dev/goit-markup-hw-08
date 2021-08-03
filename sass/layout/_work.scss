@@ -1,3 +1,9 @@
+.work {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  padding-top: 0;
+}
 .work__item {
   display: flex;
   margin-left: -30px;

@@ -1,32 +1,49 @@
 .specifics {
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 .preference__list {
-  display: flex;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    @include listGrid();
+  }
 }
+
 .preference__item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  @media screen and (min-width: 768px) {
+    @include itemGrid();
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+.preference__item :not(first-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
 }
 .preference__item-icon {
   display: flex;
-  width: 270px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   margin-bottom: 30px;
-  justify-content: center;
   align-items: center;
   background: var(--team-section-color);
 }
-
 .preference__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--secondary-color);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .preference__text {
-  margin-top: 10px;
-  width: 270px;
-
   font-weight: 400;
   line-height: 1.71;
   color: var(--text-color);
