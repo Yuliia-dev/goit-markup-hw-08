@@ -5,13 +5,11 @@
   padding-top: 0;
 }
 .work__item {
-  display: flex;
-  margin-left: -30px;
+  @include listGrid();
 }
 .work__item-img {
+  @include itemGrid();
   position: relative;
-  display: flex;
-  margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .work__overlay {
