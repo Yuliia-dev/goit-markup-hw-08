@@ -1,14 +1,28 @@
 .filter-item {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
   :not(:last-child) {
-    margin-right: 10px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
+
 .filter-list {
   justify-content: center;
+}
+.filter-list:nth-child(-n + 3) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
 }
 .filter-btn.current {
   background-color: var(--accent-color);

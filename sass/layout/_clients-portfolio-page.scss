@@ -1,13 +1,7 @@
 .client {
-  margin-top: -30px;
-  margin-left: -30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.client-list {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    @include listGrid();
+  }
 }
 .client-name {
   padding: 20px 24px;
@@ -20,14 +14,24 @@
   transition-property: transform, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
 
   &:hover,
   &:hover .client-overlay {
     transform: translateY(0%);
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 768px) {
+    @include itemGrid();
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    @include itemGrid();
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+.client-item:not(first-child) {
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
   }
 }
 .client-title {
