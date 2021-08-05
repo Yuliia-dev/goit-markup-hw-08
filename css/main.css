@@ -407,7 +407,7 @@ img {
 }
 
 .menu-list {
-  margin-bottom: 302px;
+  margin-bottom: 300px;
 }
 
 .menu-list__item:not(:first-child),
@@ -1275,8 +1275,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   font-weight: 400;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -1285,6 +1284,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal-form-checkbox {
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
