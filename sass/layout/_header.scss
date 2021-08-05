@@ -7,12 +7,9 @@
 .nav {
   display: flex;
   align-items: center;
-}
 
-.logo {
   @media screen and (max-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    justify-content: space-between;
   }
 }
 
