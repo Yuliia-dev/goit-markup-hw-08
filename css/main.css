@@ -117,8 +117,17 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--half-logo-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo,
+  .half-logo {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo {
@@ -555,15 +564,34 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--hero-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-container:not(:first-child) {
-  margin-left: 75px;
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.general {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-container:not(:first-child) {
+    margin-left: 75px;
+  }
+}
+
+.footer-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .general {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-title {
@@ -573,45 +601,22 @@ img {
   color: var(--title-color);
 }
 
-.connect {
-  transition-property: var(--hero-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--title-color);
+@media screen and (max-width: 1200px) {
+  .social__list {
+    margin-bottom: 100px;
+  }
 }
 
-.connect:hover, .connect:focus {
-  color: var(--accent-color);
+@media screen and (max-width: 768px) {
+  .social__list {
+    margin-bottom: 60px;
+  }
 }
 
-.address {
-  margin-top: 20px;
-  font-style: inherit;
-}
-
-.contacts-item:not(:first-child) {
-  margin-top: 10px;
-}
-
-.hookup-footer {
-  transition-property: var(--hero-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-style: normal;
-  color: var(--text-color);
-}
-
-.hookup-footer:hover, .hookup-footer:focus {
-  color: var(--accent-color);
-}
-
-.subscription {
-  margin-left: 98px;
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 98px;
+  }
 }
 
 .subscription-footer {
@@ -621,14 +626,16 @@ img {
   color: var(--title-color);
 }
 
-.container-subscription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .container-subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .subscription-email {
-  width: 360px;
+  width: 100%;
   padding: 15px;
   margin-right: 10px;
   background-color: transparent;
@@ -640,6 +647,27 @@ img {
 
 .subscription-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1200px) {
+  .subscription-email {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-email {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-email {
+    width: 360px;
+  }
 }
 
 .subscription-btn {
@@ -661,8 +689,70 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1200px) {
+  .subscription-btn {
+    margin: 0 auto;
+  }
+}
+
 .subscription-icon {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-logo,
+  .connect,
+  .hookup-footer,
+  .footer-title,
+  .social__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .subscription-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-style: inherit;
+}
+
+.contacts-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.connect {
+  transition-property: var(--hero-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+.connect:hover, .connect:focus {
+  color: var(--accent-color);
+}
+
+.hookup-footer {
+  transition-property: var(--hero-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.hookup-footer:hover, .hookup-footer:focus {
+  color: var(--accent-color);
 }
 
 .filter-item {

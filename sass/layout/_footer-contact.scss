@@ -1,3 +1,28 @@
+.footer-logo,
+.connect,
+.hookup-footer,
+.footer-title,
+.social__item {
+  @media screen and (max-width: 768px) {
+    @include center();
+  }
+}
+
+.subscription-footer {
+  @media screen and (max-width: 1200px) {
+    @include center();
+  }
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-style: inherit;
+}
+.contacts-item:not(:first-child) {
+  margin-top: 10px;
+}
+
 .connect {
   transition-property: var(--hero-color);
   transition-duration: 250ms;
@@ -13,13 +38,7 @@
     color: var(--accent-color);
   }
 }
-.address {
-  margin-top: 20px;
-  font-style: inherit;
-}
-.contacts-item:not(:first-child) {
-  margin-top: 10px;
-}
+
 .hookup-footer {
   transition-property: var(--hero-color);
   transition-duration: 250ms;
