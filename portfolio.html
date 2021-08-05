@@ -13,37 +13,103 @@
       </head>
 
   <body>
-    <header class="header">
+   <header class="header">
       <div class="container nav">
         <nav class="nav">
-          <a class="logo link" lang="en" href="./index.html"><span class="half-logo">Web</span>Studio</a>
+          <a class="logo link" lang="en" href="./index.html"
+            ><span class="half-logo">Web</span>Studio</a
+          >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link  link" href="./index.html">Студия</a>
+              <a class="menu__link link" href="">Студия</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link-current link" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link link menu__link-current " href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-    
+
+
         <ul class="hookup list">
           <li class="hookup__item">
             <a class="hookup__link link" href="mailto:info@devstudio.com">
               <svg class="hookup__link-icon" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="hookup__item">
             <a class="hookup__link link" href="tel:+380961111111">
               <svg class="hookup__link-icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>+38 096 111 11 11</a>
+                <use href="./images/sprite.svg#icon-phone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
+
+        <!-- Mobile-menu -->
+
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+
+      </div>
+
+      <div class="mobile-menu" data-menu>
+
+        <div class="container mobile-menu__container">
+        <button type="button" class="close-btn mobile-menu__close-btn" data-menu-close>
+          <svg class="close-btn__icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="list menu-list ">
+            <li class="menu-list__item">
+              <a class="link menu-list__link  " href="./index.html">Студия</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="link menu-list__link menu-list__link-current " href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="link menu-list__link " href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="list hookup-list">
+          <li class="hookup-list__item">
+            <a class="link hookup-list__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+          <li class="hookup-list__item">
+            <a class="link hookup-list__link-tel" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+
+        <ul class="list social-list ">
+          <li class="social-list__item">
+            <a class="link social-list__link" href="#">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a class="link social-list__link" href="#">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="link social-list__link" href="#">Facebook</a>
+          </li>
+          <li class="social-list__item">
+          <a class="link social-list__link" href="#">LinkedIn</a>
+        </li>
+        </ul>
+
+
+      </div>
+
       </div>
     </header>
 

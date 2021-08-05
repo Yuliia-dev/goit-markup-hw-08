@@ -1,5 +1,7 @@
 .specifics {
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .preference__list {
   @media screen and (min-width: 768px) {
