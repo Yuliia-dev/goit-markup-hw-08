@@ -500,7 +500,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1601px) {
   .hero {
     background-image: none;
   }
