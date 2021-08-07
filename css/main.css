@@ -462,6 +462,18 @@ img {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 325px) {
+  .social-list__item:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .social-list__item:nth-child(4) {
+    padding-left: 0;
+  }
+}
+
 .social-list__link {
   font-size: 18px;
   line-height: 22px;
@@ -497,12 +509,7 @@ img {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .hero {
-    background-image: none;
+    background-size: 1600px;
   }
 }
 
