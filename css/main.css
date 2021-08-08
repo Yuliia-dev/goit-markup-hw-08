@@ -453,6 +453,12 @@ img {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 415px) {
+  .social-list__item {
+    padding-left: 10px;
+  }
+}
+
 .social-list__item:not(:first-child) {
   padding-left: 10px;
 }
@@ -460,18 +466,6 @@ img {
 .social-list__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-@media screen and (max-width: 325px) {
-  .social-list__item:nth-child(3) {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 405px) {
-  .social-list__item:nth-child(4) {
-    padding-left: 0;
-  }
 }
 
 .social-list__link {
