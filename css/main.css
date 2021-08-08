@@ -455,6 +455,7 @@ img {
 .social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 415px) {
