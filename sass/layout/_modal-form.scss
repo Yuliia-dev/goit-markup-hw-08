@@ -87,9 +87,12 @@
 
   color: var(--text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 480px) {
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     @include font(14px, 1.71, 0.03em);
   }
 
@@ -122,6 +125,7 @@
   font-weight: 400;
   border-bottom: 1px solid var(--accent-color);
   padding: 0;
+  margin-left: 3px;
 
   color: var(--accent-color);
 

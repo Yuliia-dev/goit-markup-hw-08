@@ -77,9 +77,12 @@
 .hookup-list__link {
   @include font(34px, 40px, 0.02em);
 
-  font-size: 8vw;
   font-weight: 500;
   color: var(--accent-color);
+
+  @media screen and (max-width: 480px) {
+    font-size: 8vw;
+  }
 }
 
 .hookup-list__link-tel {
@@ -92,7 +95,7 @@
 .social-list {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .social-list__item {

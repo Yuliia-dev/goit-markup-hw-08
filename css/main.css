@@ -434,9 +434,14 @@ img {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  font-size: 8vw;
   font-weight: 500;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 480px) {
+  .hookup-list__link {
+    font-size: 8vw;
+  }
 }
 
 .hookup-list__link-tel {
@@ -450,7 +455,6 @@ img {
 .social-list {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 415px) {
@@ -1348,10 +1352,15 @@ img {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .modal-form-checkbox {
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -1388,6 +1397,7 @@ img {
   font-weight: 400;
   border-bottom: 1px solid var(--accent-color);
   padding: 0;
+  margin-left: 3px;
   color: var(--accent-color);
 }
 
