@@ -73,8 +73,7 @@
   margin-bottom: 64px;
   margin-top: auto;
 }
-
-.hookup-list__link {
+.hookup-list__link-tel {
   @include font(34px, 40px, 0.02em);
 
   font-weight: 500;
@@ -85,7 +84,7 @@
   }
 }
 
-.hookup-list__link-tel {
+.hookup-list__link {
   @include font(24px, 28px, 0.02em);
 
   font-weight: 500;

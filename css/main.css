@@ -430,7 +430,7 @@ img {
   margin-top: auto;
 }
 
-.hookup-list__link {
+.hookup-list__link-tel {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
@@ -439,12 +439,12 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .hookup-list__link {
+  .hookup-list__link-tel {
     font-size: 8vw;
   }
 }
 
-.hookup-list__link-tel {
+.hookup-list__link {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
