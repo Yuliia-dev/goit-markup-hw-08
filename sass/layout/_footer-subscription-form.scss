@@ -37,6 +37,7 @@
   @media screen and (max-width: 1200px) {
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 768px) {
     width: 450px;
     display: block;
@@ -45,6 +46,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 360px;
+    margin-right: 12px;
   }
 }
 .subscription-btn {

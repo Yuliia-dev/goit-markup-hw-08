@@ -940,6 +940,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscription-email {
     width: 360px;
+    margin-right: 12px;
   }
 }
 
@@ -994,6 +995,12 @@ img {
   margin-top: 20px;
   margin-bottom: 60px;
   font-style: inherit;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-item:not(:first-child) {
@@ -1237,7 +1244,6 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 530px;
-    height: 580px;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
