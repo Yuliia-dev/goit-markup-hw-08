@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WebStudio</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-          rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/main.min.css"> 
-      </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
   <body>
-
     <!-- Header -->
 
-   <header class="header">
+    <header class="header">
       <div class="container nav">
         <nav class="nav">
           <a class="logo link" lang="en" href="./index.html"
@@ -24,17 +31,16 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html">Студия</a>
+              <a class="menu__link link" href="./index.html">Studio</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link menu__link-current " href="./portfolio.html">Портфолио</a>
+              <a class="menu__link link menu__link-current" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link" href="">Контакты</a>
+              <a class="menu__link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-
 
         <ul class="hookup list">
           <li class="hookup__item">
@@ -57,392 +63,726 @@
 
         <button type="button" class="burger-btn" data-menu-open>
           <svg class="burger-btn__icon" width="40" height="40">
-              <use href="./images/sprite.svg#icon-menu-mobile"></use>
+            <use href="./images/sprite.svg#icon-menu-mobile"></use>
           </svg>
         </button>
-
       </div>
 
       <div class="mobile-menu" data-menu>
-
         <div class="container mobile-menu__container">
-        <button type="button" class="close-btn mobile-menu__close-btn" data-menu-close>
-          <svg class="close-btn__icon" width="40" height="40">
+          <button type="button" class="close-btn mobile-menu__close-btn" data-menu-close>
+            <svg class="close-btn__icon" width="40" height="40">
               <use href="./images/sprite.svg#icon-close-menu"></use>
-          </svg>
-        </button>
+            </svg>
+          </button>
 
-        <ul class="list menu-list ">
+          <ul class="list menu-list">
             <li class="menu-list__item">
-              <a class="link menu-list__link  " href="./index.html">Студия</a>
+              <a class="link menu-list__link" href="./index.html">Studio</a>
             </li>
             <li class="menu-list__item">
-              <a class="link menu-list__link menu-list__link-current " href="./portfolio.html">Портфолио</a>
+              <a class="link menu-list__link menu-list__link-current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-list__item">
-              <a class="link menu-list__link " href="">Контакты</a>
+              <a class="link menu-list__link" href="">Contacts</a>
             </li>
           </ul>
 
           <ul class="list hookup-list">
-          <li class="hookup-list__item">
-            <a class="link hookup-list__link" href="mailto:info@devstudio.com">
-              info@devstudio.com</a>
-          </li>
-          <li class="hookup-list__item">
-            <a class="link hookup-list__link-tel" href="tel:+380961111111">
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+            <li class="hookup-list__item">
+              <a class="link hookup-list__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="hookup-list__item">
+              <a class="link hookup-list__link-tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+          </ul>
 
-        <ul class="list social-list ">
-          <li class="social-list__item">
-            <a class="link social-list__link" href="#">Instagram</a>
-          </li>
-          <li class="social-list__item">
-            <a class="link social-list__link" href="#">Twitter</a>
-          </li>
-          <li class="social-list__item">
-            <a class="link social-list__link" href="#">Facebook</a>
-          </li>
-          <li class="social-list__item">
-          <a class="link social-list__link" href="#">LinkedIn</a>
-        </li>
-        </ul>
-
-
-      </div>
-
+          <ul class="list social-list">
+            <li class="social-list__item">
+              <a class="link social-list__link" href="#">Instagram</a>
+            </li>
+            <li class="social-list__item">
+              <a class="link social-list__link" href="#">Twitter</a>
+            </li>
+            <li class="social-list__item">
+              <a class="link social-list__link" href="#">Facebook</a>
+            </li>
+            <li class="social-list__item">
+              <a class="link social-list__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="portfolio-page section">
-        
         <!-- Buttons -->
         <div class="container">
-        <ul class="filter-item list">
-        <li class="filter-list ">
-            <button class="filter-btn current link " type="button">Все</button></li>
-        <li class="filter-list">
-            <button class="filter-btn link" type="button">Веб-сайты</button></li>
-        <li class="filter-list">
-            <button class="filter-btn link" type="button">Приложения</button></li>
-        <li class="filter-list">
-            <button class="filter-btn link" type="button">Дизайн</button></li>
-        <li class="filter-list">
-            <button class="filter-btn" type="button">Маркетинг</button></li>
-      </ul>
+          <ul class="filter-item list">
+            <li class="filter-list">
+              <button class="filter-btn current link" type="button">All</button>
+            </li>
+            <li class="filter-list">
+              <button class="filter-btn link" type="button">Websites</button>
+            </li>
+            <li class="filter-list">
+              <button class="filter-btn link" type="button">Applications</button>
+            </li>
+            <li class="filter-list">
+              <button class="filter-btn link" type="button">Design</button>
+            </li>
+            <li class="filter-list">
+              <button class="filter-btn" type="button">Marketing</button>
+            </li>
+          </ul>
 
-    <!-- Client -->
-  
-      <ul class="client list">
-        <li class="client-item">
-      
-        <a class="client-link link"  href="">
-          <div class="client-overlay-wrapper">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/tehnokryk-desktop.webp 1x, ./portfolio-images/tehnokryk-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/tehnokryk-desktop.jpg 1x, ./portfolio-images/tehnokryk-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/tehnokryk-tablet.webp 1x, ./portfolio-images/tehnokryk-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/tehnokryk-tablet.jpg 1x, ./portfolio-images/tehnokryk-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/tehnokryk-mobile.webp 1x, ./portfolio-images/tehnokryk-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/tehnokryk-mobile.jpg 1x, ./portfolio-images/tehnokryk-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/tehnokryk-desktop.jpg" alt="Открытый ноутбук" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-            шпионажа и атак на защищённые сервера конкурентов.</p>
+          <!-- Client -->
+
+          <ul class="client list">
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-desktop.webp    1x,
+                        ./portfolio-images/tehnokryk-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-desktop.jpg    1x,
+                        ./portfolio-images/tehnokryk-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-tablet.webp    1x,
+                        ./portfolio-images/tehnokryk-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-tablet.jpg    1x,
+                        ./portfolio-images/tehnokryk-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-mobile.webp    1x,
+                        ./portfolio-images/tehnokryk-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/tehnokryk-mobile.jpg    1x,
+                        ./portfolio-images/tehnokryk-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/tehnokryk-desktop.jpg" alt="Открытый ноутбук" />
+                  </picture>
+                  <p class="client-overlay">
+                    Technocryak is a modern platform for the spread of the coronavirus. Companies
+                    use this platform for digital espionage and attacks on protected servers
+                    competitors
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Technocrack</h3>
+                  <p class="client-text">Website</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/poster-desktop.webp    1x,
+                        ./portfolio-images/poster-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/poster-desktop.jpg    1x,
+                        ./portfolio-images/poster-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/poster-tablet.webp    1x,
+                        ./portfolio-images/poster-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/poster-tablet.jpg    1x,
+                        ./portfolio-images/poster-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/poster-mobile.webp    1x,
+                        ./portfolio-images/poster-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/poster-mobile.jpg    1x,
+                        ./portfolio-images/poster-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./portfolio-images/poster-desktop.jpg"
+                      alt="Постер с баскетболистами"
+                    />
+                  </picture>
+                  <p class="client-overlay">
+                    Poster New Orleans vs Golden Star is a great example of a successful design
+                    decision.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Poster New Orlean vs Golden Star</h3>
+                  <p class="client-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/seafood-desktop.webp    1x,
+                        ./portfolio-images/seafood-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/seafood-desktop.jpg    1x,
+                        ./portfolio-images/seafood-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/seafood-tablet.webp    1x,
+                        ./portfolio-images/seafood-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/seafood-tablet.jpg   1x,
+                        ./portfolio-images/poster-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/seafood-mobile.webp    1x,
+                        ./portfolio-images/seafood-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/seafood-mobile.jpg    1x,
+                        ./portfolio-images/seafood-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/seafood-desktop.jpg" alt="Вывеска ресторана" />
+                  </picture>
+                  <p class="client-overlay">
+                    Restaurant Seafood is a place for great food and good times with friends.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Restaurant Seafood</h3>
+                  <p class="client-text">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/earphones-desktop.webp    1x,
+                        ./portfolio-images/earphones-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/earphones-desktop.jpg    1x,
+                        ./portfolio-images/earphones-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/earphones-tablet.webp    1x,
+                        ./portfolio-images/earphones-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/earphones-tablet.jpg    1x,
+                        ./portfolio-images/earphones-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/earphones-mobile.webp    1x,
+                        ./portfolio-images/earphones-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/earphones-mobile.jpg    1x,
+                        ./portfolio-images/earphones-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/earphones-desktop.jpg" alt="Наушники" />
+                  </picture>
+                  <p class="client-overlay">
+                    PRIME advanced and versatile PRInting platform for the next generation of active
+                    Microfluidic dEvices.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Project Prime</h3>
+                  <p class="client-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/boxes-desktop.webp    1x,
+                        ./portfolio-images/boxes-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/boxes-desktop.jpg    1x,
+                        ./portfolio-images/boxes-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/boxes-tablet.webp    1x,
+                        ./portfolio-images/boxes-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/boxes-tablet.jpg    1x,
+                        ./portfolio-images/boxes-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/boxes-mobile.webp    1x,
+                        ./portfolio-images/boxes-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/boxes-mobile.jpg    1x,
+                        ./portfolio-images/boxes-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/boxes-desktop.jpg" alt="Коробки" />
+                  </picture>
+                  <p class="client-overlay">
+                    Project enclosures from Polycase offer an economical solution for housing
+                    circuit boards and electronic components. Our large selection of electronic
+                    project boxes come in a variety of styles, colors, and sizes. Molded from
+                    flame-retardant ABS plastic or high-quality aluminum, our PCB enclosures are
+                    durable and reliable to ensure your circuit board is protected. Popular styles
+                    of circuit board enclosures include: handheld enclosures and key fob cases for
+                    wireless applications, desktop style enclosures for table top use, potting boxes
+                    and many more..
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Project Boxes</h3>
+                  <p class="client-text">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/computer-desktop.webp    1x,
+                        ./portfolio-images/computer-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/computer-desktop.jpg    1x,
+                        ./portfolio-images/computer-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/computer-tablet.webp    1x,
+                        ./portfolio-images/computer-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/computer-tablet.jpg    1x,
+                        ./portfolio-images/computer-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/computer-mobile.webp    1x,
+                        ./portfolio-images/computer-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/computer-mobile.jpg    1x,
+                        ./portfolio-images/computer-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/computer-desktop.jpg" alt="Компьютер" />
+                  </picture>
+                  <p class="client-overlay">
+                    From a designer's perspective inspiration has no borders. Communicating in a
+                    language, understood by everyone, can secure the well-being of our planet and
+                    all its inhabitants, leading us to peaceful coexistence..
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title" lang="en">Inspiration has no Borders</h3>
+                  <p class="client-text">Website</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/magazine-desktop.webp    1x,
+                        ./portfolio-images/magazine-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/magazine-desktop.jpg    1x,
+                        ./portfolio-images/magazine-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/magazine-tablet.webp    1x,
+                        ./portfolio-images/magazine-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/magazine-tablet.jpg    1x,
+                        ./portfolio-images/magazine-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/magazine-mobile.webp    1x,
+                        ./portfolio-images/magazine-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/magazine-mobile.jpg    1x,
+                        ./portfolio-images/magazine-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/magazine-desktop.jpg" alt="Открытый журнал" />
+                  </picture>
+                  <p class="client-overlay">
+                    Publication for creative and inspired people. Articles and news that everyone
+                    should know.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Edition 'Limited Edition'</h3>
+                  <p class="client-text">Designer</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/lab-desktop.webp    1x,
+                        ./portfolio-images/lab-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/lab-desktop.jpg    1x,
+                        ./portfolio-images/lab-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/lab-tablet.webp    1x,
+                        ./portfolio-images/lab-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/lab-tablet.jpg    1x,
+                        ./portfolio-images/lab-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/lab-mobile.webp    1x,
+                        ./portfolio-images/lab-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/lab-mobile.jpg    1x,
+                        ./portfolio-images/lab-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/lab-desktop.jpg" alt="Этикетка с надписью" />
+                  </picture>
+                  <p class="client-overlay">
+                    Labels are used in Nozbe Personal to help you organize projects. Projects can be
+                    grouped and filtered by Labels and can be tagged by more than one Label.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title">Project LAB</h3>
+                  <p class="client-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href="">
+                <div class="client-overlay-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/laptop-desktop.webp    1x,
+                        ./portfolio-images/laptop-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./portfolio-images/laptop-desktop.jpg    1x,
+                        ./portfolio-images/laptop-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/laptop-tablet.webp    1x,
+                        ./portfolio-images/laptop-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./portfolio-images/laptop-tablet.jpg    1x,
+                        ./portfolio-images/laptop-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/laptop-mobile.webp    1x,
+                        ./portfolio-images/laptop-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./portfolio-images/laptop-mobile.jpg    1x,
+                        ./portfolio-images/laptop-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img src="./portfolio-images/laptop-desktop.jpg" alt="Открытый ноутбук" />
+                  </picture>
+                  <p class="client-overlay">
+                    So you have a business and business is good. Now how do you make it better? The
+                    best businesses are always looking for ways to improve, whether that’s offering
+                    better products or adopting more efficient processes. Here’s how you can take
+                    your business to the next level.
+                  </p>
+                </div>
+                <div class="client-name">
+                  <h3 class="client-title" lang="en">Growing Business</h3>
+                  <p class="client-text">Application</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-          <div class="client-name">
-            <h3 class="client-title">Технокряк</h3>
-            <p class="client-text">Веб-сайт</p>
-          </div>
-        </a> 
-        </li>
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./portfolio-images/poster-desktop.webp 1x, ./portfolio-images/poster-desktop@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1200px)" srcset="./portfolio-images/poster-desktop.jpg 1x, ./portfolio-images/poster-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./portfolio-images/poster-tablet.webp 1x, ./portfolio-images/poster-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 768px)" srcset="./portfolio-images/poster-tablet.jpg 1x, ./portfolio-images/poster-tablet@2x.jpg 2x">
-                <source media="(min-width: 320px)" srcset="./portfolio-images/poster-mobile.webp 1x, ./portfolio-images/poster-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 320px)" srcset="./portfolio-images/poster-mobile.jpg 1x, ./portfolio-images/poster-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/poster-desktop.jpg" alt="Постер с баскетболистами" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="client-name">
-            <h3 class="client-title">Постер New Orlean vs Golden Star</h3>
-            <p class="client-text">Дизайн</p>
-          </div>
-          </a>
-        </li>
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/seafood-desktop.webp 1x, ./portfolio-images/seafood-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/seafood-desktop.jpg 1x, ./portfolio-images/seafood-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/seafood-tablet.webp 1x, ./portfolio-images/seafood-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/seafood-tablet.jpg 1x, ./portfolio-images/poster-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/seafood-mobile.webp 1x, ./portfolio-images/seafood-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/seafood-mobile.jpg 1x, ./portfolio-images/seafood-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/seafood-desktop.jpg" alt="Вывеска ресторана" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="client-name">
-            <h3 class="client-title">Ресторан Seafood</h3>
-            <p class="client-text">Приложение</p>
-          </div>
-          </a>
-        </li>
-        <li class="client-item">
-        
-          <a class="client-link link" href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./portfolio-images/earphones-desktop.webp 1x, ./portfolio-images/earphones-desktop@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1200px)" srcset="./portfolio-images/earphones-desktop.jpg 1x, ./portfolio-images/earphones-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./portfolio-images/earphones-tablet.webp 1x, ./portfolio-images/earphones-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 768px)" srcset="./portfolio-images/earphones-tablet.jpg 1x, ./portfolio-images/earphones-tablet@2x.jpg 2x">
-                <source media="(min-width: 320px)" srcset="./portfolio-images/earphones-mobile.webp 1x, ./portfolio-images/earphones-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 320px)" srcset="./portfolio-images/earphones-mobile.jpg 1x, ./portfolio-images/earphones-mobile@2x.jpg 2x">
-              <img src="./portfolio-images/earphones-desktop.jpg" alt="Наушники" />
-            </picture>
-              <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-                платформу для цифрового
-                шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="client-name">
-              <h3 class="client-title">Проект Prime</h3>
-              <p class="client-text">Маркетинг</p>
-            </div>
-          </a>
-        </li>
-
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/boxes-desktop.webp 1x, ./portfolio-images/boxes-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/boxes-desktop.jpg 1x, ./portfolio-images/boxes-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/boxes-tablet.webp 1x, ./portfolio-images/boxes-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/boxes-tablet.jpg 1x, ./portfolio-images/boxes-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/boxes-mobile.webp 1x, ./portfolio-images/boxes-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/boxes-mobile.jpg 1x, ./portfolio-images/boxes-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/boxes-desktop.jpg" alt="Коробки"/>
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-            </div>
-            <div class="client-name">
-            <h3 class="client-title">Проект Boxes</h3>
-            <p class="client-text">Приложение</p>
-          </div>
-          </a>
-        </li>
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/computer-desktop.webp 1x, ./portfolio-images/computer-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/computer-desktop.jpg 1x, ./portfolio-images/computer-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/computer-tablet.webp 1x, ./portfolio-images/computer-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/computer-tablet.jpg 1x, ./portfolio-images/computer-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/computer-mobile.webp 1x, ./portfolio-images/computer-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/computer-mobile.jpg 1x, ./portfolio-images/computer-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/computer-desktop.jpg" alt="Компьютер" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-           </div>
-            <div class="client-name">
-            <h3 class="client-title" lang="en">Inspiration has no Borders</h3>
-            <p class="client-text">Веб-сайт</p>
-            </div>
-          </a>
-        </li>
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-             <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/magazine-desktop.webp 1x, ./portfolio-images/magazine-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/magazine-desktop.jpg 1x, ./portfolio-images/magazine-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/magazine-tablet.webp 1x, ./portfolio-images/magazine-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/magazine-tablet.jpg 1x, ./portfolio-images/magazine-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/magazine-mobile.webp 1x, ./portfolio-images/magazine-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/magazine-mobile.jpg 1x, ./portfolio-images/magazine-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/magazine-desktop.jpg" alt="Открытый журнал" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-          </div>
-            <div class="client-name">
-            <h3 class="client-title">Издание Limited Edition</h3>
-            <p class="client-text">Дизайн</p>
-            </div>
-          </a>
-        </li>
-        <li class="client-item">
-           
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/lab-desktop.webp 1x, ./portfolio-images/lab-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/lab-desktop.jpg 1x, ./portfolio-images/lab-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/lab-tablet.webp 1x, ./portfolio-images/lab-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/lab-tablet.jpg 1x, ./portfolio-images/lab-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/lab-mobile.webp 1x, ./portfolio-images/lab-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/lab-mobile.jpg 1x, ./portfolio-images/lab-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/lab-desktop.jpg" alt="Этикетка с надписью" />
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-          </div>
-            <div class="client-name">
-            <h3 class="client-title">Проект LAB</h3>
-            <p class="client-text">Маркетинг</p>
-            </div>
-          </a>
-        </li>
-        <li class="client-item">
-          
-          <a class="client-link link"  href="">
-            <div class="client-overlay-wrapper">
-              <picture>
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/laptop-desktop.webp 1x, ./portfolio-images/laptop-desktop@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 1200px)" srcset="./portfolio-images/laptop-desktop.jpg 1x, ./portfolio-images/laptop-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/laptop-tablet.webp 1x, ./portfolio-images/laptop-tablet@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 768px)" srcset="./portfolio-images/laptop-tablet.jpg 1x, ./portfolio-images/laptop-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/laptop-mobile.webp 1x, ./portfolio-images/laptop-mobile@2x.webp 2x"
-                type="image/webp">
-              <source media="(min-width: 320px)" srcset="./portfolio-images/laptop-mobile.jpg 1x, ./portfolio-images/laptop-mobile@2x.jpg 2x">
-            <img src="./portfolio-images/laptop-desktop.jpg" alt="Открытый ноутбук"/>
-          </picture>
-            <p class="client-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-              платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-         </div>
-            <div class="client-name">
-            <h3 class="client-title" lang="en">Growing Business</h3>
-            <p class="client-text">Приложение</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-  <footer class="footer">
+    <footer class="footer">
       <div class="container general">
         <div class="footer-wrapper">
-        <div class="footer-container">
-          <a class="logo footer-logo link" lang="en" href="./index.html"
-            ><span class="half-logo">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="contacts list">
-              <li class="contacts-item">
-                <a
-                  class="connect link"
-                  href="https://goo.gl/maps/mreH3rbR9d4Kw75F6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+          <div class="footer-container">
+            <a class="logo footer-logo link" lang="en" href="./index.html"
+              ><span class="half-logo">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="contacts list">
+                <li class="contacts-item">
+                  <a
+                    class="connect link"
+                    href="https://goo.gl/maps/mreH3rbR9d4Kw75F6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Kyiv, 26 Lesya Ukrainka Ave</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="hookup-footer link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="contacts-item">
+                  <a class="hookup-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-container footer-container-social">
+            <h2 class="footer-title"><strong>join in</strong></h2>
+            <ul class="social__list social__list-footer list">
+              <li class="social__item">
+                <a class="social__link footer__link" href=""
+                  ><svg class="footer__link-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="contacts-item">
-                <a class="hookup-footer link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="social__item">
+                <a class="social__link footer__link" href=""
+                  ><svg class="footer__link-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="contacts-item">
-                <a class="hookup-footer link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social__item">
+                <a class="social__link footer__link" href=""
+                  ><svg class="footer__link-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link footer__link" href=""
+                  ><svg class="footer__link-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-container footer-container-social">
-          <h2 class="footer-title"><strong>присоединяйтесь</strong></h2>
-          <ul class="social__list social__list-footer list">
-            <li class="social__item">
-              <a class="social__link footer__link" href=""
-                ><svg class="footer__link-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link footer__link" href=""
-                ><svg class="footer__link-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link footer__link" href=""
-                ><svg class="footer__link-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link footer__link" href=""
-                ><svg class="footer__link-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
         <!-- /* Subscription form */ -->
 
         <div class="subscription">
-          <b class="subscription-footer">Подпишитесь на рассылку</b>
+          <b class="subscription-footer">Subscribe to the newsletter</b>
           <form>
             <div class="container-subscription">
               <input
@@ -453,7 +793,7 @@
                 required
               />
               <button class="subscription-btn" type="submit">
-                Подписаться
+                Subscribe
                 <svg class="subscription-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
@@ -464,6 +804,6 @@
       </div>
     </footer>
 
-   <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
